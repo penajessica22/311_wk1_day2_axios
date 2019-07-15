@@ -35,13 +35,13 @@ const discoverMovie = () => {
 const getMovieById = (id) => {
   const url = `https://api.themoviedb.org/3/movie/${id}?api_key=${api_key.API_KEY}`
   // code here
-  axios.get(url).then(function(id) {
-    params: {
-      ID: 500
-    }
+  axios.get(url).then(function(data) {
+    // params: {
+    //   ID: 500
+    // }
     
     // console.log(response.data)
-    return axios(url).then(original_title => original_title)
+    // return axios(url).then(original_title => original_title)
     
   })
   console.log(id)
